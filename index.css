@@ -10,7 +10,7 @@
     font-family: 'Hacked',sans-serif;
 }
 .showcase{
-    position: relative;
+    position: absolute;
     right: 0;
     width: 100%;
     min-height: 100vh;
@@ -83,7 +83,7 @@
     color: crimson;
 }
 .text{
-    position: fixed;
+    position: relative;
     z-index: 5;
 }
 
@@ -108,7 +108,7 @@
 }
 
 .social{
-    position: fixed;
+    position: absolute;
     bottom: 20px;
     z-index: 10;
     display: flex;
@@ -163,5 +163,11 @@
 .fsocial li a:hover {
     transform: scale(0.15) translate(-5px); 
 }
-
+@media(max-width:950px) {
+    .showcase,
+    .showcase header{
+        padding: 20px;
+    }
+    
+}
 
