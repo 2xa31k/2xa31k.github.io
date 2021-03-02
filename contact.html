@@ -4,7 +4,7 @@
         <meta name="viewport" content="initial-scale=1.0, width=device-width">
         <meta charset="UTF-8">
         <link rel="shortcut icon" type="image/x-icon" href="profile.png"/>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="contact.css">
         <title>2xa31k</title>
     </head>
     <body>
@@ -14,19 +14,22 @@
                 <div class="toggle"></div>
             </header>
             <div class="text">
-                <h2>
-                    <strong>
-                        Soon...  
-                    </strong>
-                </h2>
+                <form action="https://formspree.io/f/mzbklyjz" method="post">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" required id="fname" name="name" placeholder="Your name..">
+                    <label for="mail">E-mail</label>
+                    <input type="email" required id="mail" name="_replyto" placeholder="just@example.com...">
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" required name="message" placeholder="Write something.." style="height:200px"></textarea>
                 
+                    <input type="submit" value="Submit">
+                
+                  </form>
+                  
             </div>
-           <!-- <ul class="social">
-                <li><a href="https://github.com/2xa31k" target="_blank"><img src="github.png" alt="GITHUB"></a></li>
-                <li><a href="https://twitter.com/2xa31k" target="_blank"><img src="twitter.png" alt="TWITTER"></a></li>
-            </ul>-->
         </section>
-            <div class="menu">
+            <div class="menu" id="navbar">
                 <ul>
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/soon.html">Blog</a></li>
